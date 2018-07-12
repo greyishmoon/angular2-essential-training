@@ -16,8 +16,7 @@ export class MediaItemListComponent {
     }
 
     onMediaItemDelete(mediaItem) {
-        console.log("onMediaItemDelete "+ mediaItem);
-        this.MediaItemService.delete(mediaItem);
+        this.mediaItemService.delete(mediaItem);
     }
 
 }

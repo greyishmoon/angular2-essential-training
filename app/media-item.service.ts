@@ -8,12 +8,12 @@ export class MediaItemService {
     }
 
     delete(mediaItem) {
-        let index - this.mediaItems.indexOf(mediaItem);
-        if (index > 0) {
+        let index = this.mediaItems.indexOf(mediaItem);
+        if (index >= 0) {
             this.mediaItems.splice(index, 1);
         }
     }
-    
+
     mediaItems = [
       {
         id: 1,
